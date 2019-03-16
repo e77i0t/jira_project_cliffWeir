@@ -1,0 +1,16 @@
+General process of how I envision this program functioning. References "EOD Generation Pre-Alpha" and "metabase query"
+1. Request issues from Production Incidents board
+2. Add issues to a list we'll call "workable" (each element in the list is a separate issue) if the issue occurred
+ during the current day
+3. Sort that list based on orb site (This is hypothetical as I haven't had any hands on experience with Kindreds Jira
+ but based on my own testing each issue should have the orb site listed along with the orb number and a bunch of other
+ info). So "workable" will be sorted into either lists or a single dictionary. In the case of a dictionary each key
+ would refer to the orb site. In the case of lists each list would be titled according to the orb site.
+4. For metabase information, I've run into a wall. I use my google account to log in. Because of this, I don't have a
+ password stored that is linked to my email. This prevents me from getting a token to make any get requests. This should
+ be easy(ish) to resolve after getting my initial code reviewed.
+5. Everything after part 3 and 4 is a bit abstract since I don't currently have access to Kindreds jira and metabase.
+ The plan is to run the information through (refined) loops like what I have right now, replacing the downtime
+ calculations with the results from metabase. Tack on the units sorted, make sure everything is formatted and save the
+ results to a txt document. Depending on how well everything goes, I'd consider adapting it to be run by a Boty McBot
+ Face command, but as of now that's a fever dream.
