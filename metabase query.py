@@ -4,8 +4,8 @@ from requests.auth import HTTPBasicAuth
 import json
 
 # POST request for session token
-user = "cliff.weir@kindred.ai"
-password = "Fiyero2390!"
+user = placeholder
+password = placeholder2
 URL = "https://metabase.ec2.kindredai.net/api/session"
 auth = HTTPBasicAuth(user, password)
 
