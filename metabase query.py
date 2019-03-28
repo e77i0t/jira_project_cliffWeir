@@ -14,7 +14,7 @@ headers = {
 
 }
 
-authorization = '{"username": "cliff.weir@kindred.ai", "password": "Boromokott2390!"}'
+authorization = '{"username": placeholder, "password": placeholder2}'
 
 r = requests.post(headers=headers, data=authorization, url=URL)
 print(r.text) # prints that my password is not linked to my account.
